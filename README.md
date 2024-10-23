@@ -7,10 +7,9 @@
 ## Features
 
 - **User Authentication:** Secure registration and login processes.
-- **Defect Management:** Log and manage defects with detailed descriptions, statuses, and priority levels.
+- **Defect Management:** Log and manage defects with detailed descriptions.
 - **Real-Time Updates:** Leverage Vue.js for dynamic, real-time updates without refreshing the page.
-- **Search and Filtering:** Easily search and filter defects by status, priority, or assigned user.
-- **Dashboard Overview:** Visual representation of defect metrics and statuses.
+- **Search and Filtering:** Easily search and filter defects.
 - **Commenting System:** Facilitate discussion and updates on specific defects.
 
 ## Technologies Used
@@ -36,3 +35,9 @@ To set up **DefectLog** on your local machine, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/defectlog.git
+
+2. **Add AdminUser:**
+   php artisan db:seed --class=AdminUserSeeder
+
+3. **Migrate:**
+   php artisan Migrate
